@@ -1,6 +1,6 @@
 package pl.edu.agh.hangman;
 
-import pl.edu.agh.hangman.ioOperation.SearchingWord;
+import pl.edu.agh.hangman.ioOperation.WordFromFile;
 
 public class Hangman {
 
@@ -59,7 +59,7 @@ public class Hangman {
     public static void main(String[] args) {
 
 
-        SearchingWord word = new SearchingWord();
+        WordFromFile word = new WordFromFile();
         String searchingWord = word.drawWord();
 
 

@@ -2,17 +2,16 @@ package pl.edu.agh.hangman.ioOperation;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class SearchingWord {
+public class WordFromFile implements HangmanWord {
 
     List<String> enableWords = new ArrayList<String>();
 
-    public SearchingWord( ) {
+    public WordFromFile( ) {
         getEnableWordsFromFile( );
     }
 
@@ -33,6 +32,7 @@ public class SearchingWord {
         }
     }
 
+    @Override
     public String drawWord(){
         Random random = new Random();
         int wordIndex = random.nextInt(enableWords.size());
