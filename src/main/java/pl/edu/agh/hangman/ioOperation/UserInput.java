@@ -10,4 +10,5 @@ public class UserInput {
         char inputCharacter = sc.next().charAt(0);
         return inputCharacter;
     }
+
 }

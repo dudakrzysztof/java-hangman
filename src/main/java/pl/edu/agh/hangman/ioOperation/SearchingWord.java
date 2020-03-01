@@ -12,14 +12,14 @@ public class SearchingWord {
 
     List<String> enableWords = new ArrayList<String>();
 
-    public SearchingWord(String enableWordsFilePath) {
-        getEnableWordsFromFile(enableWordsFilePath);
+    public SearchingWord( ) {
+        getEnableWordsFromFile( );
     }
 
-    private void getEnableWordsFromFile(String filePath) {
+    private void getEnableWordsFromFile() {
 
         try {
-            File file = new File(filePath);
+            File file = new File( getClass().getClassLoader().getResource("slowa.txt").getFile());
 
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -29,13 +29,13 @@ public class SearchingWord {
                 enableWords.add((txtLine));
         }
         catch (Exception e) {
-            System.out.println("Wystapil blad wczytywania pliku " + filePath + "\n\n" + e.getMessage());
+            System.out.println("Wystapil blad wczytywania pliku " + e.getMessage());
         }
     }
 
-    private String drawWord(){
+    public String drawWord(){
         Random random = new Random();
         int wordIndex = random.nextInt(enableWords.size());
-        return  enableWords.get(wordIndex);
+        return  enableWords.get(wordIndex).toUpperCase();
     }
 }
