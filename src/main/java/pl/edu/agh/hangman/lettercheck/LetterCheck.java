@@ -13,6 +13,9 @@ public class LetterCheck {
         this.asterisk = createAsterics(word);
     }
 
+    public String getAsterisk() {
+        return asterisk.toString();
+    }
 
     public boolean check (Character letter) {
         boolean existInWord = false;
@@ -22,6 +25,7 @@ public class LetterCheck {
                 asterisk.setCharAt(i, letter);
             }
         }
+//        System.out.println(existInWord);
     return existInWord;
     }
 
@@ -29,7 +33,7 @@ public class LetterCheck {
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < word.length() ; i++) {
-            result.append("_ ");
+            result.append("_");
         }
         return result;
     }
