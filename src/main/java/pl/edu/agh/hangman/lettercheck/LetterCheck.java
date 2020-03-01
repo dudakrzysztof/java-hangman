@@ -34,9 +34,69 @@ public class LetterCheck {
         return result;
     }
 
-    public void hangmanImage() {
-        if (count == 1) {
-            
-        }
-    }
+//    public void hangmanImage() {
+//        if (count == 1) {
+//            System.out.println(            "  +---+\n" +
+//                    "  |   |\n" +
+//                    "      |\n" + "    " +asterisk +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 2){
+//            System.out.println( "  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 3){
+//            System.out.println("  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    "  |   |\n" +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 4){
+//            System.out.println("  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    " /|   |\n" +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 5){
+//            System.out.println("  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    " /|\\  |\n" +
+//                    "      |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 6){
+//            System.out.println("  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    " /|\\  |\n" +
+//                    " /    |\n" +
+//                    "      |\n" +
+//                    "=========");
+//        }
+//        if (count == 7){
+//            System.out.println("  +---+\n" +
+//                    "  |   |\n" +
+//                    "  O   |\n" + "    " +asterisk +
+//                    " /|\\  |\n" +
+//                    " / \\  |\n" +
+//                    "      |\n" +
+//                    "========");
+//        }
+//    }
 }
