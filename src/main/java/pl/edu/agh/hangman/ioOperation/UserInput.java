@@ -11,4 +11,14 @@ public class UserInput {
         return inputCharacter;
     }
 
+    private String createAsterics(String word){
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < word.length()  ; i++) {
+            result.append("_");
+        }
+
+        return result.toString();
+    }
+
 }

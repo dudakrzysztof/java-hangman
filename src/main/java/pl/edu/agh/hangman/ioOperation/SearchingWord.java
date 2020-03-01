@@ -36,6 +36,15 @@ public class SearchingWord {
     public String drawWord(){
         Random random = new Random();
         int wordIndex = random.nextInt(enableWords.size());
-        return  enableWords.get(wordIndex).toUpperCase();
+
+        String drawWord= enableWords.get(wordIndex).toUpperCase();
+
+        String result = "";
+
+        for (int i = 0; i < drawWord.length() ; i++) {
+            result += drawWord.charAt(i) + " ";
+        }
+
+        return  result;
     }
 }

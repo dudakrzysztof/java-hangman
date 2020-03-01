@@ -63,6 +63,6 @@ public class Hangman {
         String searchingWord = word.drawWord();
 
 
-
+        System.out.println(searchingWord);
     }
 }
